@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://use.fontawesome.com/00b7c19f1a.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/homePageTwo.css">
+	<title></title>
+</head>
+<body>
+
+<header id="header">
+	<div class="container-fluid" style="background-color:#1f2629"> 
+		<div class="container">
+			<div class="row connect">
+					<h6><span>Call Us</span>: 9855 445 4444</h6>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid headerTwo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"><a href="#"><img src="images/logo.png"></a></div>
+				<div class="col-md-9">
+					<ul class="nav nav-tab nav-justified menu">
+					  <li><a href="#">Home</a></li>
+					  <li><a href="#">About Us</a></li>
+					  <li><a href="#">News</a></li>
+					  <li><a href="#">Portfolio</a></li>
+					  <li><a href="#">Service</a></li>
+					  <li><a href="#">Blog</a></li>
+					  <li><a href="#">Pages</a></li>
+					  <li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+	</div>
+</header>
+<div class="clearFix"></div>
+<section id="cover">
+	<div class="slideshow">
+  		<div class="mySlides">
+    		<img src="images/1.jpg" style="width: 100%; margin: 0 auto; ">
+    		<div class="text">
+				<h1>IMAGE</h1>
+				<h1>Boost up your</h1>
+				<h1><b>LOCAL BUSINESS</b></h1>
+				<h3><a href="#"><button type="button" class="btn">CONTACT US</button></a></h3> 
+				<a class="prev" onclick="prev()">&#10094;</a>
+				<a class="next" onclick="next()">&#10095;</a>
+				<div class="row subscription">
+                  <div class="col-md-3">
+                      <span class="sectionSubHeader">SIGN UP</span>
+                      <h4 class="sectionHeader">NEWSLETTER</h4>
+                  </div>
+                  <div class="col-md-3 form-group" >
+                      <label for="email"></label>
+                     <input type="email" class="form-control" id="email" placeholder="NAME">
+                  </div>
+                  <div class="col-md-3 form-group">
+                      <label for="email"></label>
+                     <input type="email" class="form-control" id="email" placeholder="EMAIL ADDRESS">
+                  </div>
+                  <div class="col-md-3">
+                      <button type="button" class="btn btn-warning"><strong>SUBSCRIBE NOW</strong></button>
+                  </div>
+             </div>
+			</div>
+  		</div>
+	</div>
+</section>
+<script type="text/javascript">
+imageArr=["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg"]
+descArr=["IMAGE 1","IMAGE 2","IMAGE 3","IMAGE 4","IMAGE 5"]
+nameArr=["PANDA","BEAR","DWARF","PANDA AND KOALA","KOALA"]
+describeArr=["WHITE AND BLACK","WHITE","YELLOW AND BROWN","WHITE AND BLACK AND GRAY","GRAY"]
+buttonArr=["CONTACT US","WHATCH US","SEE US","KNOW US","READ US"]
+
+	imgSource=document.getElementsByTagName('img')[1];
+	descSource=document.getElementsByClassName('text')[0].getElementsByTagName('h1')[0];
+	nameSource=document.getElementsByClassName('text')[0].getElementsByTagName('h1')[1];
+	describeSource=document.getElementsByClassName('text')[0].getElementsByTagName('h1')[2];
+	buttonSource=document.getElementsByClassName('text')[0].getElementsByTagName('button')[0];
+	descSource.innerHTML=descArr[0];
+	nameSource.innerHTML=nameArr[0];
+	describeSource.innerHTML=describeArr[0];
+	buttonSource.innerHTML=buttonArr[0];
+	imgSource.src=imageArr[0];
+
+	count=0;
+
+	function prev() {
+		count--;
+		if (count<0) {
+			count=imageArr.length-1;
+		} 
+		imgSource.src=imageArr[count];
+		descSource.innerHTML=descArr[count];
+		nameSource.innerHTML=nameArr[count];
+		describeSource.innerHTML=describeArr[count];
+		buttonSource.innerHTML=buttonArr[count];
+	}
+	function next() {
+		count++;
+		if (count==imageArr.length) {
+			count=0;
+		} 
+		imgSource.src=imageArr[count];
+		descSource.innerHTML=descArr[count];
+		nameSource.innerHTML=nameArr[count];
+		describeSource.innerHTML=describeArr[count];
+		buttonSource.innerHTML=buttonArr[count];
+	}
+</script>
+<div class="clearFix"></div>
+<section id="whatWeAre">
+		<div class="container">
+			<div class="AreWe">
+				<h5>What</h5>
+				<h6><b>WE ARE<b></h6>
+			</div>
+			<div>
+				<div class="col-md-6 image">	
+						<h3>IMAGE</h3>
+						<h3>475x308</h3>		
+				</div>
+				<div class="col-md-6 text">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.</p>
+					<a href="#"><button type="button" class="btn">READ MORE</button></a>
+				</div>
+			</div>
+		</div>
+</section>
+<div class="clearFix"></div>
+<section id="ourServices">
+		<div class="container-fluid services">
+			<div class="container">
+				<div class="our">
+					<h5>OUR</h5>
+					<h6><b>SERVICES<b></h6>
+				</div>
+				<div class="row">
+					<div class="col-md-1">
+						<img src="images/10.png" class="img-responsive ">
+					</div>
+					<div class="col-md-3"> 
+						<h4>Data Entry</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+					</div>
+					<div class="col-md-1">
+						<img src="images/icon5.png" class="img-responsive">
+					</div>
+					<div class="col-md-3">
+						<h4>Client management</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+					</div>
+					<div class="col-md-1">
+						<img src="images/icon6.png" class="img-responsive ">
+					</div>
+					<div class="col-md-3">
+						<h4>Better Communication</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+					</div>
+				</div>
+				<div class="clearFix"></div>
+				<div class="row secondLine">
+					<div class="col-md-1">
+						<img src="images/icon7.png" class="img-responsive ">
+					</div>
+					<div class="col-md-3">
+						<h4>Weel analyzing team</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+					</div>
+					<div class="col-md-1">
+						<img src="images/icon8.png" class="img-responsive">
+					</div>
+					<div class="col-md-3">
+						<h4>24 hour support</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+					</div>
+					<div class="col-md-1">
+						<img src="images/icon9.png" class="img-responsive ">
+					</div>
+					<div class="col-md-3">
+						<h4>Keeping business data</h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+					</div> 
+				</div>
+			</div>
+		</div>
+</section>
+<div class="clearFix"></div>
+<section id="happy">
+		<div class="container-fluid clients">
+			<div class="container">
+				<div class="heading">
+					<h5>HAPPY</h5>
+					<h6><b>CLIENTS<b></h6>
+					<h4 class="fa fa-quote-left" aria-hidden="true"></h4>
+					<br>
+					<br>
+					<br>
+					<br>
+					<span><b><i class="fa fa-quote-left fa-pull-left" aria-hidden="true"></i></b><p><em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+					specimen book. It has survived not only five centuries.</em> </p><b><i class="fa fa-quote-right fa-pull-right" aria-hidden="true"></i></b></span>
+					<br>
+					<h3>by</h3>	
+					<h3><b>Sunitha Danial</b></h3>
+				</div>
+				<div class="altiBucaqli">
+					<div class="hexagon first">
+						<h3>IMAGE<br>55X63</h3>
+					</div>
+					<div class="hexagon">
+						<h3>IMAGE<br>55X63</h3>
+					</div>
+					<div class="hexagon">
+						<h3>IMAGE<br>55X63</h3>
+					</div>
+					<div class="hexagon marg last">
+						<h3>IMAGE<br>55X63</h3>
+					</div>
+					<div class="hexagon	marg">
+						<h3>IMAGE<br>55X63</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<script type="text/javascript">
+commentArr=["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.","However, also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.","It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.","Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.","There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."]
+
+	commentSource=document.getElementsByClassName('heading')[0].getElementsByTagName('p')[0];
+	commentSource.innerHTML=commentArr[0];
+
+	count=0;
+
+	function nextComment() {
+		count++;
+		if (count==commentArr.length) {
+			count=0;
+		} 
+		commentSource.innerHTML=commentArr[count];
+	}
+	var myInterval=setInterval(nextComment, 5000);
+</script>
+<div class="clearFix"></div>
+<section id="pricing">
+		<div class="container-fluid">
+			<div class="container">
+				<div class="main">
+						<h5>OUR</h5>
+						<h6><b>PRICING<b></h6>	
+					<div class=" col-md-3">
+						<div class="personal">
+							<h3><b><span>PER</span>SONAL</b></h3>
+							<h4>From <span>$100</span> per month</h4>
+							<p>Business Support</p>
+							<p>Business Analysing</p>
+							<p>24 hour support</p>
+							<button>START NOW</button>
+						</div>
+					</div>
+					<div class=" col-md-3">
+						<div class="business">
+							<h3><b><span>BUS</span>INESS</b></h3>
+							<h4>From <span>$200</span> per month</h4>
+							<p>Business Support</p>
+							<p>Business Analysing</p>
+							<p>24 hour support</p>
+							<p>Client management</p>
+							<button>START NOW</button>
+						</div>	
+					</div>	
+					<div class=" col-md-3">
+						<div class="gold">
+							<h3><b><span>GOL</span>D</b></h3>
+							<h4>From <span>$250</span> per month</h4>
+							<p>Business Support</p>
+							<p>Business Analysing</p>
+							<p>Keeping business data</p>
+							<button>START NOW</button>
+						</div>
+					</div>	 
+					<div class=" col-md-3">
+						<div class="ultimate">
+							<h3><b><span>ULTI</span>MATE</b></h3>
+							<h4>From <span>$300</span> per month</h4>
+							<p>Business Support</p>
+							<p>Business Analysing</p>
+							<p>Keeping business data</p>
+							<p>Better communication</p>
+							<button>START NOW</button>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+</section>
+<div class="clearFix"></div>
+<section id="team">
+	<div class="col-md-12 main">
+		<div class="container-fluid">
+			<div class="container">
+				<h3>OUR</h3>
+				<h6><b>TEAM<b></h6>	
+ 					<div class=" col-md-3">
+						<div class="specialist">
+							<div class="topSide">
+								<h4>IMAGE</h4>
+								<h4>263 X 276</h4>
+							</div>
+							<div class="bottomSide">
+								<h5>MR. RAMGOPALAVAR MA</h5>
+								<h5><span>Data Specialist</span></h5>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+					<div class=" col-md-3">
+						<div class="specialist">
+							<div class="topSide">
+								<h4>IMAGE</h4>
+								<h4>263 X 276</h4>
+							</div>
+							<div class="bottomSide" style="background:#29c2e1">
+								<h5>Madhavikutti Menon</h5>
+								<h5><span style="color: #23282f">Client Support</span></h5>
+								<i class="fa fa-facebook" aria-hidden="true" style="color:white"></i>
+								<i class="fa fa-twitter" aria-hidden="true" style="color:white"></i>
+								<i class="fa fa-google-plus-official" aria-hidden="true" style="color:white"></i>
+							</div>
+						</div>
+					</div>
+					<div class=" col-md-3">
+						<div class="specialist">
+							<div class="topSide">
+								<h4>IMAGE</h4>
+								<h4>263 X 276</h4>
+							</div>
+							<div class="bottomSide">
+								<h5>Dr.Venkittaraman</h5>
+								<h5><span>Client Management</span></h5>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+					<div class=" col-md-3">
+						<div class="specialist">
+							<div class="topSide">
+								<h4>IMAGE</h4>
+								<h4>263 X 276</h4>
+							</div>
+							<div class="bottomSide">
+								<h5>George Danial</h5>
+								<h5><span>Communication</span></h5>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="clearFix"></div>
+<section id="blog">
+	<div class="container-fluid">
+		<div class="container" style="margin-bottom: 30px;">
+			<div class="post">
+				<h5>OUR</h5>
+				<h6><b>BLOG POST<b></h6>
+			</div>
+			<div class="image">
+				<div class="date"></div>
+				<div class="text">
+					<h1>IMAGE</h1>
+					<h1>1140X395</h1>
+				</div>
+			</div>
+			<div class="heading">
+				<br>
+				<div class="col-md-8"><h3><span style="border-bottom: 2px solid #f7941d; color:#23282f;">Blog</span> Heading Here</h3></div>
+				<div class="col-md-2"><i class="fa fa-user" aria-hidden="true"><span> BY ADMIN </span></i></div>
+				<div class="col-md-2"><i class="fa fa-comments-o" aria-hidden="true"><span> COMMENT </span></i></div>
+				<br>
+				<br>
+				<br>
+				<div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p></div>
+				<div><button>READ MORE</button></div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="clearFix"></div>
+<section id="footer">
+	<div class="container-fluid">
+	<div class="container main">	
+	<div>
+	<div class="col-md-2">
+		<img src="images/untitled-1.png" class="img-responsive">
+	</div>
+		<div class="col-md-10">
+			<div class="col-md-4">
+				<div class="menu">
+					<h3>Menu</h3>
+					<div class="col-md-6">
+						<h5>HOME</h5>
+						<h5>ABOUT US</h5>
+						<h5>FEATURES</h5>
+						<h5>PORTFOLIO</h5>
+					</div>
+					<div class="col-md-6">
+						<h5>SERVICE</h5>
+						<h5>BLOG</h5>
+						<h5>BLOG PAGE</h5>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="contact">
+					<h3>Contact</h3>
+					<h5><span>ADRESS : </span> GEETHANJALI STREET</h5>
+					<h5>SECOND FLOR : 88569</h5>
+					<h5><span>PHONE : </span>+988 9956 222</h5>
+					<h5><span>EMAIL : </span>INFO@BUSINESS.COM</h5>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="newsletter">
+					<h3>Newsletter</h3>
+					<h5>SIGN UP YOUR NEWSLETTER</h5>
+					<input type="text" name="email" value="EMAIL ADRESS">
+					<button>GO</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</div>
+	</div>
+	<hr>
+	<!-- <div class="container-fluid last">
+	<div class="container">
+	</div>
+	</div> -->
+	<div class="col-md-12 footer">
+		<h5>  © 2015 BUSINESS LTD. ALLRIGHT RESERVED</h5>
+		</div>	
+</section>	
+
+</body>
+</html>
